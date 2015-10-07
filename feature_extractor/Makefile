@@ -4,7 +4,7 @@ POSTFLAGS=`pkg-config --libs opencv`
 
 ROOT=${shell pwd}
 export BINSDIR=$(ROOT)/bins
-export CUDABINSDIR=$(ROOT)/cubins
+export CUDABINSDIR=$(ROOT)/bins
 export CUDA_PATH=/usr/local/cuda-5.5
 
 CPUDIRS:=$(ROOT)/color_histogram \
@@ -31,7 +31,6 @@ all:dir cpu cuda
 
 dir:
 	mkdir -p $(BINSDIR)
-	mkdir -p $(CUDABINSDIR)
 
 cpu:
 	@for n in $(CPUDIRS); do $(MAKE) -C $$n; done
@@ -42,4 +41,4 @@ cuda:
 clean:
 	@for n in $(CPUDIRS); do $(MAKE) -C $$n clean; done
 	@for n in $(CUDADIRS); do $(MAKE) -C $$n clean; done
-	rm $(BINSDIR)/* $(CUDABINSDIR)/*
+	rm $(BINSDIR)/* 
