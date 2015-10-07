@@ -125,7 +125,7 @@ def cache_db(method):
         cache_a_log(log, method)
 
     shutil.move(cache_dir + method + '_cache.db.write', cache_dir + method + '_cache.db')
-    print 'database ' + method + 'cached!'
+    print 'database ' + method + 'cached! ' + str(len(features)) + ' images!'
 
 #loop to generate cache databases
 def loop():

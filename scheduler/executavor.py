@@ -14,7 +14,7 @@ cursor = {}
 feature_dict = {}
 image_dir = '../images/'
 bins_dir = '../feature_extractor/bins/'
-database_dir = '../database'
+database_dir = '../database/'
 
 #read configuration
 def parse_config():
@@ -167,7 +167,7 @@ if __name__ == '__main__' :
     #block_crawler()
     init_db()
     loop()
-     try:
+    # try:
     #     loop()
     # except:
     #     for method in config["extraction_method"]:
