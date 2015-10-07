@@ -11,7 +11,7 @@ import shutil
 
 config = {}
 image_dir = '../images/'
-images_pool = '../web_demo/images_pool/'
+images_pool = '../web_demo/demo/images_pool/'
 
 #read configuration
 def parse_config():

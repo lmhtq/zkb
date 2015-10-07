@@ -95,7 +95,7 @@ def retrieve_from_database(img_name, method):
     
     res_dict = []
     for df in allfeatures:
-        na, fea = df[1], np.array(map(float, feature.split(' ')))
+        na, fea = df[1], np.array(map(float, df[2].split(' ')))
         val = np.sqrt(sum((tf-fea)**2))
         res_dict.append({"name":na, "value":val})
 
