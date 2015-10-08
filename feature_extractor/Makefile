@@ -18,10 +18,10 @@ CPUDIRS:=$(ROOT)/color_histogram \
 
 CUDADIRS:=$(ROOT)/color_histogram_cuda \
 	$(ROOT)/color_correlogram_cuda \
-	#$(ROOT)/color_coherence_vector_cuda \
 	$(ROOT)/color_moment_cuda \
 	$(ROOT)/texture_lbp_cuda \
 	#$(ROOT)/texture_gabor_cuda \
+	#$(ROOT)/color_coherence_vector_cuda \
 	#$(ROOT)/shape_hog_cuda \
 	#$(ROOT)/shape_eoh_cuda
 

@@ -90,6 +90,9 @@ def loop():
                 os.symlink(fn, image_dir + fn.split('/')[-1])
                 print image_dir + fn.split('/')[-1] + ' has been put in ' + image_dir 
                 crawler_ready()
+            else:
+                os.symlink(fn, image_dir + fn.split('/')[-1])
+                print image_dir + fn.split('/')[-1] + ' has been put in ' + image_dir 
 
 
 if __name__ == '__main__' :
